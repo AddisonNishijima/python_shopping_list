@@ -1,42 +1,39 @@
-# make a list that will hold onto our items
-shopping_list = []
-
 def show_help():
-# print out instructions on how to use the app
-	print("What should we pick up at the store?")
-	print("""
-Enter 'DONE' to stop adding items.
-Enter 'HELP' for this help.
-Enter 'SHOW' to see your current list.
-""")
+	print("\nSeparate each item with a comma.")
+	print("Type DONE to quit, SHOW to see the current list, and HELP to get this message.")
+	
 
 def show_list():
-	# print out the list
-	print("Here's your list:")
-
+	count = 1
 	for item in shopping_list:
-		print(item)
-
-def add_to_list(new_item):
-	# add new items to our list
-	shopping_list.append(new_item)
-	print("Added {}. List now has {} items.".format(new_item, len(shopping_list)))
-	
+		print("{}: {}".format(count, item))
+		count += 1
+			  
+print("Give me a list of things you want to shop for.")
 show_help()
-
+			  
 while True:
-	# ask for new items
-	new_item = input("> ")
+	new_stuff = input("> ")
 	
-	# ask for new items
-	if new_item == 'DONE':
+	if new_stuff == "DONE":
+		print("\nHere's your list:")
+		show_(list)
 		break
-	elif new_item == 'HELP':
+	elif new_stuff == "HELP":
 		show_help()
 		continue
-	elif new_item == 'SHOW':
+	elif new_stuff == "SHOW":
 		show_list()
 		continue
-	add_to_list(new_item)
-	
-	show_list()
+	else:
+		new_list = new_stuff.split(",")
+		index = input(" Add this at a certain spot? Press enter for the end of the list, or give me a number. Current {} items in the list.".format(len(shopping_list)))
+		
+		if index:
+			spot = int(index) - 1
+			for item in new_list:
+				shopping_list.insert(spot,item.strip())
+				spot += 1
+		else:
+			for item in new_list:
+				shopping_list.append(item.strip())
