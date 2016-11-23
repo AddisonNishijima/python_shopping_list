@@ -16,11 +16,11 @@ _The user can ask for help_
 
 ## Setup/Installation Requirements
 
-* _type "git clone https://github.com/AddisonNishijima/python_shopping_list.git" into your terminal _
+* _type "git clone https://github.com/AddisonNishijima/python_shopping_list.git" into your terminal_
 * _make sure the project folder is in an easy to access place, like the desktop_
-* _install [Python](https://www.python.org/downloads/) _
+* _install [Python](https://www.python.org/downloads/)_
 * _enter the project folder and double-click to open with Python_
-* _For more detailed/complex running of the script on Windows please see [these](http://www.python-course.eu/python3_execute_script.php) [other](https://docs.python.org/3.5/faq/windows.html) [links](https://docs.python.org/2/tutorial/interpreter.html) _
+* _For more detailed/complex running of the script on Windows please see [these](http://www.python-course.eu/python3_execute_script.php) [other](https://docs.python.org/3.5/faq/windows.html) [links](https://docs.python.org/2/tutorial/interpreter.html)_
 
 _Other than Python, this code does not rely on any other programs_
 
