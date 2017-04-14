@@ -23,9 +23,13 @@ def add_to_list(item):
 
 def show_list():
 	clear_screen()
+
     print("Here's your list:")
+
+	index = 1
     for item in shopping_list:
-        print(item)
+        print("{}. {}".format(index, item))
+		index += 1
 
 
 show_help()
