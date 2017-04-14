@@ -33,15 +33,15 @@ show_help()
 while True:
     new_item = input("> ")
 
-    if new_item == 'DONE':
+    if new_item.upper() == 'DONE' or new_item.upper() == 'QUIT':
         break
-    elif new_item == 'HELP':
+    elif new_item.upper() == 'HELP':
         show_help()
         continue
-    elif new_item == 'SHOW':
+    elif new_item.upper() == 'SHOW':
         show_list()
         continue
-
+	else:
     add_to_list(new_item)
 
 show_list()
