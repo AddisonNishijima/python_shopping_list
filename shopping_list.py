@@ -1,5 +1,9 @@
+import os
+
 shopping_list = []
 
+def clear_screen():
+	os.system("cls" if os.name == "nt" else "clear")
 
 def show_help():
     print("What should we pick up at the store?")
